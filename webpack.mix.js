@@ -29,3 +29,8 @@ mix.scripts([
     'resources/js/libs/wow.js',
     'resources/js/libs/custom.js'
 ],'public/js/libs.js');
+
+
+mix.browserSync('shades.test');
+
+

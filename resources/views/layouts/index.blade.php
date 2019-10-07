@@ -17,188 +17,18 @@
 
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
           rel="stylesheet">
+
     <link href="{{asset('css/libs.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <title>Shades E-commerce</title>
 </head>
 
 <body style="font-family: sans-serif;">
-<header class="" style="background: #4cb2cb;">
-    <div class="row mx-0">
-        <div class="col-12">
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="row">
-                        <div class="col-lg-1 col-0"></div>
-                        <div class="col-lg-3 col-6">
-                            <select name="" id="" class="form-control my-lg-2 my-1"
-                                    style="background: transparent; color:#fff; ">
-                                <!--                                <option value="">Language :</option>-->
-                                <option value="">&#xf1ab;</option>
-                                <option value="pie_chart"> &#xf2bb; Pie Chart</option>
-                            </select>
-
-                        </div>
-                        <!--                        <div class="col-lg-2 col-0"></div>-->
-                        <div class="col-lg-3 col-6"><select name="" id="" class="form-control my-lg-2 my-1"
-                                                            style="background: transparent; color:#fff;">
-                            <option value="">&#xf155;</option>
-                        </select></div>
-                        <div class="col-lg-1 col-0"></div>
-                    </div>
-
-
-                </div>
-                <!--                <div class="col-lg-2 col-0"></div>-->
-                <div class="col-lg-6 col-12">
-                    <div class="row pt-2">
-                        <div class="col-1">
-
-                        </div>
-                        <div class="col-2">
-                            <li class="upperlist">Account</li>
-                        </div>
-                        <div class="col-2">
-                            <li class="upperlist">Whishlist</li>
-                        </div>
-                        <div class="col-2">
-                            <li class="upperlist">Checkout</li>
-                        </div>
-
-                        <div class="col-2">
-                            <li class="upperlist">Log In</li>
-                        </div>
-                        <div class="col-2">
-                            <li class="upperlist">Sign Up</li>
-                        </div>
-                        <div class="col-1">
-
-                        </div>
-                    </div>
-
-
-                    <!--                    <nav class="navbar navbar-expand-lg navbar-light" style="font-size:15px;">-->
-
-                    <!--                        <button class="navbar-toggler" style="margin-left:-16px; border-color: #fff;" type="button"-->
-                    <!--                                data-toggle="collapse"-->
-                    <!--                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
-                    <!--                                aria-expanded="false" aria-label="Toggle navigation">-->
-                    <!--                            <span class="navbar-toggler-icon">-->
-                    <!--                                  <i class="fa fa-bars" style="color:#fff; font-size:27px; padding-top:2px;"></i>-->
-                    <!--                            </span>-->
-                    <!--                        </button>-->
-
-                    <!--                        <div class="collapse navbar-collapse navbar_change mt-lg-0 mt-2" id="navbarSupportedContent">-->
-                    <!--                            <ul class="navbar-nav">-->
-
-                    <!--                                <li class="px-3">-->
-                    <!--                                    <a class="nav-link text-white navbar_text_color" href="#">Link</a>-->
-                    <!--                                </li>-->
-
-                    <!--                                <li class="nav-item px-3">-->
-                    <!--                                    <a class="nav-link text-white  navbar_text_color" href="#">Link</a>-->
-                    <!--                                </li>-->
-
-                    <!--                                <li class="nav-item px-3">-->
-                    <!--                                    <a class="nav-link text-white  navbar_text_color" href="#">Link</a>-->
-                    <!--                                </li>-->
-
-                    <!--                                <li class="nav-item px-3">-->
-                    <!--                                    <a class="nav-link text-white  navbar_text_color" href="#">Link</a>-->
-                    <!--                                </li>-->
-
-                    <!--                                <li class="nav-item px-3 removeborderright">-->
-                    <!--                                    <a class="nav-link text-white  navbar_text_color" href="#">Link</a>-->
-                    <!--                                </li>-->
-
-
-                    <!--                            </ul>-->
-
-                    <!--                        </div>-->
-                    <!--                    </nav>-->
-
-                </div>
-            </div>
-        </div>
-        <div class="col-12 bg-white">
-            <div class="row my-4">
-
-                <div class="col-lg-3 col-6">
-                    <h2 class="mx-lg-5 mx-0 mt-lg-2 mt-0 fixheading">NEW SHOP</h2>
-                </div>
-                <div class="col-lg-5 col-6">
-                    <nav class="navbar navbar-expand-lg navbar-light" style="font-size:15px;">
-
-                        <button class="navbar-toggler" style="margin-left:-16px; border-color: #fff;" type="button"
-                                data-toggle="collapse"
-                                data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                  <i class="fa fa-bars" style="color:#fff; font-size:27px; padding-top:2px;"></i>
-                            </span>
-                        </button>
-
-                        <div class="collapse navbar-collapse navbar_change mt-lg-0 mt-2" id="navbarSupportedContent2">
-                            <ul class="navbar-nav">
-
-                                <li class="px-3 removeborderright">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-
-                                <li class="nav-item px-3 removeborderright">
-                                    <a class="nav-link " href="#">Link</a>
-                                </li>
-
-                                <li class="nav-item px-3 removeborderright">
-                                    <a class="nav-link " href="#">Link</a>
-                                </li>
-
-                                <li class="nav-item px-3 removeborderright">
-                                    <a class="nav-link " href="#">Link</a>
-                                </li>
-
-                                <li class="nav-item px-3 removeborderright">
-                                    <a class="nav-link " href="#">Link</a>
-                                </li>
-
-
-                            </ul>
-
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="has-search mt-2">
-                                <form class="form-inline my-2 my-lg-0">
-                                    <span class="fa fa-search form-control-feedback search_icon" style=""></span>
-                                    <input class="form-control mr-sm-2" style="padding-left:7px;" type="search"
-                                           placeholder="Search"
-                                           aria-label="Search">
-                                </form>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <i class="fa fa-shopping-cart mt-2 bg-white icon_round"></i>
-                            <i class="fa fa-shopping-cart mt-2 bg-white icon_round"></i>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="mt-3">CART<span>(1)</span></p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
-    </div>
-</header>
+      @yield('header')
 <section>
-    <div class="row bg-primary mx-0">
-        <script src="js/jssor.slider.min.js" type="text/javascript"></script>
+    <div class="row mx-0">
+        <script src="{{asset('js/libs.js')}}" type="text/javascript"></script>
+
         <script type="text/javascript">
             jssor_1_slider_init = function () {
 
@@ -335,12 +165,14 @@
             <div data-u="slides"
                  style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
                 <div>
-                    <img data-u="image" src="img/aviator-blur-close-up-1548027.jpg"/>
+
+                    <img data-u="image" src="/images/aviator-blur-close-up-1548027.jpg"/>
+
                 </div>
-                <!--            <div>-->
-                <!--                <h1 class="mt-5">wdjjasdhs</h1>-->
-                <!--                <img data-u="image" src="https://static.scientificamerican.com/sciam/cache/file/EAF12335-B807-4021-9AC95BBA8BEE7C8D_source.jpg?w=590&h=800&74A94564-944F-4349-96BD18788411EAA6" />-->
-                <!--            </div>-->
+                          <div>
+{{--                                <h1 class="mt-5">wdjjasdhs</h1>--}}
+                                <img data-u="image" src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                           </div>
 
 
             </div>
@@ -808,9 +640,9 @@
 </footer>
 
 
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>--}}
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>--}}
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="{{asset('js/libs.js')}}"></script>
 </body>
 

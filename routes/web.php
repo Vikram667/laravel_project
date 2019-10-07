@@ -24,3 +24,31 @@ Route::get('/',function(){
 
 
 });
+//Route::get('/admin',function(){
+//
+//
+//    return view('admin_index');
+//
+//
+//});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware'=>'admin'],function(){
+
+
+    Route::get('/admin',function(){
+
+
+        return view('admin_index');
+
+    });
+
+
+    Route::resource('/admin/categories','AdminCategoryController');
+
+
+});
