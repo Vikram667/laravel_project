@@ -1,1 +1,0 @@
-@extends('admin.pages.email.inbox');

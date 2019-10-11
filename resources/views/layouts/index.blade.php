@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 {{--    <link rel="stylesheet" href="css/bootstrap.css">--}}
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">-->
 
 
     <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
-{{--    <link rel="stylesheet" href="css/bootstrap.css">--}}
-{{--    <link rel="stylesheet" href="css/font-awesome.min.css">--}}
-{{--    <link rel="stylesheet" href="css/style.css">--}}
+    {{--    <link rel="stylesheet" href="css/bootstrap.css">--}}
+    {{--    <link rel="stylesheet" href="css/font-awesome.min.css">--}}
+    {{--    <link rel="stylesheet" href="css/style.css">--}}
 
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
           rel="stylesheet">
@@ -24,7 +24,7 @@
 </head>
 
 <body style="font-family: sans-serif;">
-      @yield('header')
+@yield('header')
 <section>
     <div class="row mx-0">
         <script src="{{asset('js/libs.js')}}" type="text/javascript"></script>
@@ -164,15 +164,31 @@
             </div>
             <div data-u="slides"
                  style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-                <div>
 
-                    <img data-u="image" src="/images/aviator-blur-close-up-1548027.jpg"/>
+                @foreach($slides as $slide)
 
-                </div>
-                          <div>
-{{--                                <h1 class="mt-5">wdjjasdhs</h1>--}}
-                                <img data-u="image" src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-                           </div>
+{{--                <div>--}}
+
+{{--                    <img data-u="image" src="/images/aviator-blur-close-up-1548027.jpg"/>--}}
+
+{{--                </div>--}}
+{{--                <div>--}}
+{{--                    --}}{{--                                <h1 class="mt-5">wdjjasdhs</h1>--}}
+{{--                    <img data-u="image"--}}
+{{--                         src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>--}}
+{{--                </div>--}}
+
+
+                    <div>
+
+                        <img data-u="image" src="/images/{{$slide->file}}"/>
+
+                    </div>
+
+
+
+                @endforeach
+
 
 
             </div>
@@ -618,7 +634,7 @@
         <div class="col-lg-6 col-12">
 
             <p class="pt-4" style="color:#47a9b6; font-size:13px;">&copy; 2019 newshope.All rights reserved | <span
-                    class="text-white">newdesign</span></p>
+                        class="text-white">newdesign</span></p>
 
         </div>
         <div class="col-lg-6 col-12">

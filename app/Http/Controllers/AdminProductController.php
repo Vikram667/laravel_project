@@ -4,25 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Products;
 
-class AdminCategoryController extends Controller
+
+class AdminProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-//    public function __construct()
-//    {
-//        $this->middleware('auth');
-//    }
     public function index()
     {
         //
 
-        $categories = Category::all();
+        $products = Products::all();
+        return view('add_products',compact('products'));
 
-        return view('category', compact('categories'));
 
 
     }
@@ -34,25 +32,36 @@ class AdminCategoryController extends Controller
      */
     public function create()
     {
-        //
+//        $list = Category::get()->pluck('name','id')->toArray();
+//        return view('add_products',compact('list'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return array
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         //
 
-        $input = $request->all();
-        Category::create($input);
+//        $products = Products::all();
+        $input  = $request->all();
+        if($file = $request->file('file'))
 
-        return redirect()->back();
+        {
 
+            $name = time().$file->getClientOriginalName();
+            $file->move('images',$name);
+            $photo = Products::create(['file'=>$name]);
+            $input['file'] = $photo->file;
 
+        }
+
+        Products::create($input);
+
+        return redirect('/admin/products');
 
 
     }
@@ -77,11 +86,6 @@ class AdminCategoryController extends Controller
     public function edit($id)
     {
         //
-
-        $cat = Category::findOrFail($id);
-
-        return view('edit_category',compact('cat'));
-
     }
 
     /**
@@ -94,17 +98,6 @@ class AdminCategoryController extends Controller
     public function update(Request $request, $id)
     {
         //
-
-           $input  = $request->all();
-
-          $categories = Category::findOrFail($id);
-
-          $categories->update($input);
-
-          return redirect('/admin/categories');
-
-
-
     }
 
     /**
@@ -116,13 +109,11 @@ class AdminCategoryController extends Controller
     public function destroy($id)
     {
         //
-        $categories =  Category::findOrFail($id);
 
-        $categories->delete();
-
-        return redirect()->back();
-
-
+        $products = Products::findOrFail($id);
+        unlink(public_path() . '/images/' . $products->file);
+        $products->delete();
+        return redirect('/admin/products');
 
     }
 }

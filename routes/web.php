@@ -17,20 +17,7 @@
 //
 
 
-Route::get('/',function(){
-
-
-    return view('shades_index');
-
-
-});
-//Route::get('/admin',function(){
-//
-//
-//    return view('admin_index');
-//
-//
-//});
+Route::get('/','LayoutController@index');
 
 
 Auth::routes();
@@ -49,6 +36,10 @@ Route::group(['middleware'=>'admin'],function(){
 
 
     Route::resource('/admin/categories','AdminCategoryController');
+
+    Route::resource('/admin/slides','SliderImagesController');
+
+    Route::resource('/admin/products','AdminProductController');
 
 
 });

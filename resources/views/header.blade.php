@@ -118,25 +118,13 @@
                             <div class="collapse navbar-collapse navbar_change mt-lg-0 mt-2" id="navbarSupportedContent2">
                                 <ul class="navbar-nav">
 
+                                    @foreach($categories as $category)
+
                                     <li class="px-3 removeborderright">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="#">{{$category->name}}</a>
                                     </li>
 
-                                    <li class="nav-item px-3 removeborderright">
-                                        <a class="nav-link " href="#">Link</a>
-                                    </li>
-
-                                    <li class="nav-item px-3 removeborderright">
-                                        <a class="nav-link " href="#">Link</a>
-                                    </li>
-
-                                    <li class="nav-item px-3 removeborderright">
-                                        <a class="nav-link " href="#">Link</a>
-                                    </li>
-
-                                    <li class="nav-item px-3 removeborderright">
-                                        <a class="nav-link " href="#">Link</a>
-                                    </li>
+                                    @endforeach
 
 
                                 </ul>
